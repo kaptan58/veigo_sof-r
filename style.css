@@ -1,0 +1,15 @@
+
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+header { background: #ffcc00; padding: 10px; text-align: center; font-size: 24px; }
+nav ul { list-style: none; display: flex; background: #333; margin: 0; padding: 0; }
+nav ul li { flex: 1; }
+nav ul li a { display: block; padding: 10px; color: white; text-align: center; text-decoration: none; }
+nav ul li a:hover { background: #555; }
+main { padding: 20px; }
+.stats { display: flex; gap: 10px; flex-wrap: wrap; }
+.card { background: white; padding: 20px; flex: 1; text-align: center; border-radius: 5px; }
+.page { display: none; }
+.page.active { display: block; }
+ul { list-style: none; padding: 0; }
+button { margin-left: 10px; padding: 5px 10px; background-color: #ffcc00; border: none; cursor: pointer; }
+button:hover { background-color: #e6b800; }

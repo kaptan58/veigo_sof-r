@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEIGO Driver Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚖 VEIGO Driver Panel</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showPage('dashboard')">Dashboard</a></li>
+      <li><a href="#" onclick="showPage('rides')">Active Rides</a></li>
+      <li><a href="#" onclick="showPage('requests')">Ride Requests</a></li>
+      <li><a href="#" onclick="showPage('earnings')">Earnings</a></li>
+      <li><a href="#" onclick="showPage('profile')">Profile</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="dashboard" class="page active">
+      <h2>Dashboard</h2>
+      <div class="stats">
+        <div class="card">Today's Rides: 6</div>
+        <div class="card">Today's Earnings: €120</div>
+        <div class="card">Weekly Earnings: €750</div>
+      </div>
+    </section>
+    <section id="rides" class="page">
+      <h2>Active Rides</h2>
+      <ul>
+        <li>Passenger: Mehmet Yılmaz - Destination: Alexanderplatz - Status: Ongoing</li>
+      </ul>
+    </section>
+    <section id="requests" class="page">
+      <h2>New Ride Requests</h2>
+      <ul>
+        <li>Pickup: Hauptbahnhof - Destination: Mitte <button onclick="acceptRide()">Accept</button> <button onclick="rejectRide()">Reject</button></li>
+      </ul>
+    </section>
+    <section id="earnings" class="page">
+      <h2>Earnings</h2>
+      <ul>
+        <li>02/08/2025 - €20</li>
+        <li>02/08/2025 - €15</li>
+        <li>01/08/2025 - €85</li>
+      </ul>
+    </section>
+    <section id="profile" class="page">
+      <h2>Profile & Vehicle Info</h2>
+      <p>Name: Ali Kaya</p>
+      <p>Phone: +49 162 1112233</p>
+      <p>Vehicle: Mercedes Vito - Plate: B-VG 1234</p>
+      <p>Status: Online</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
